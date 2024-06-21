@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="total sulfur dioxide <= 65.5\ngini = 0.375\nsamples = 4547\nvalue = [3410, 1137]\nclass = red whine", fillcolor="#eeab7b"] ;
+1 [label="chlorides <= 0.047\ngini = 0.153\nsamples = 967\nvalue = [81, 886]\nclass = white whine", fillcolor="#4ba6e7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sulphates <= 0.575\ngini = 0.225\nsamples = 85\nvalue = [74, 11]\nclass = red whine", fillcolor="#e99456"] ;
+1 -> 2 ;
+3 [label="gini = 0.031\nsamples = 64\nvalue = [63, 1]\nclass = red whine", fillcolor="#e5833c"] ;
+2 -> 3 ;
+4 [label="gini = 0.499\nsamples = 21\nvalue = [11, 10]\nclass = red whine", fillcolor="#fdf4ed"] ;
+2 -> 4 ;
+5 [label="sulphates <= 0.38\ngini = 0.016\nsamples = 882\nvalue = [7, 875]\nclass = white whine", fillcolor="#3b9ee5"] ;
+1 -> 5 ;
+6 [label="gini = 0.32\nsamples = 5\nvalue = [4, 1]\nclass = red whine", fillcolor="#eca06a"] ;
+5 -> 6 ;
+7 [label="gini = 0.007\nsamples = 877\nvalue = [3, 874]\nclass = white whine", fillcolor="#3a9de5"] ;
+5 -> 7 ;
+8 [label="chlorides <= 0.068\ngini = 0.13\nsamples = 3580\nvalue = [3329, 251]\nclass = red whine", fillcolor="#e78b48"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="volatile acidity <= 0.81\ngini = 0.019\nsamples = 3198\nvalue = [3167, 31]\nclass = red whine", fillcolor="#e5823b"] ;
+8 -> 9 ;
+10 [label="gini = 0.017\nsamples = 3191\nvalue = [3164, 27]\nclass = red whine", fillcolor="#e5823b"] ;
+9 -> 10 ;
+11 [label="gini = 0.49\nsamples = 7\nvalue = [3, 4]\nclass = white whine", fillcolor="#cee6f8"] ;
+9 -> 11 ;
+12 [label="volatile acidity <= 0.415\ngini = 0.488\nsamples = 382\nvalue = [162, 220]\nclass = white whine", fillcolor="#cbe5f8"] ;
+8 -> 12 ;
+13 [label="gini = 0.341\nsamples = 174\nvalue = [136, 38]\nclass = red whine", fillcolor="#eca470"] ;
+12 -> 13 ;
+14 [label="gini = 0.219\nsamples = 208\nvalue = [26, 182]\nclass = white whine", fillcolor="#55abe9"] ;
+12 -> 14 ;
+}
